@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Assignment_3</string>
+    <string name="vote">Vote Please</string>
+    <string name="voter_name">Name: </string>
+    <string name="voter_id">ID: </string>
+    <string name="name_msg">Write your Name: </string>
+    <string name="id_msg">Write your ID:</string>
+    <string name="t_off">Refuse</string>
+    <string name="t_on">Accept</string>
+    <string name="btn">Vote</string>
+    <string name="candidate_1">count_1</string>
+    <string name="candidate_2">count_2</string>
+    <string name="candidate_3">count_3</string>
+    <string-array name="Choose_Candidate">
+        <item>Choose Candidate</item>
+        <item>Candidate 1</item>
+        <item>Candidate 2</item>
+        <item>Candidate 3</item>
+    </string-array>
+</resources>

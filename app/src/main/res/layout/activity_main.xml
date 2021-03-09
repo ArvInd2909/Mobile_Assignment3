@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/vote"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/vote_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:background="#97E3D5D5"
+            android:contentDescription="@string/vote"
+            android:padding="5dp"
+            android:text="@string/vote"
+            android:textColor="#9C0202"
+            android:textColorHighlight="#F10D0D"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/candidate1_vote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="#D0C1C6DA"
+                    android:contentDescription="@string/candidate_1"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/candidate_1"
+                    android:textColor="#4E0202"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/candidate2_vote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="#D0C1C6DA"
+                    android:contentDescription="@string/candidate_2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/candidate_2"
+                    android:textColor="#4E0202"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/candidate3_vote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#D0C1C6DA"
+                    android:contentDescription="@string/candidate_3"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/candidate_3"
+                    android:textColor="#4E0202"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Vote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="5"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="Vote"
+                android:text="@string/btn"
+                android:textColor="#033E8C"
+                android:textSize="18sp"
+                app:backgroundTint="#C8C5C5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
